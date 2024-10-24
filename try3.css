@@ -19,6 +19,11 @@ header {
     padding: 20px 40px; /* Отступы сверху и снизу, слева и справа */
 }
 
+header h1 a{
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none;
+}
+
 h1 {
     font-size: 2.5em; /* Размер заголовка */
     color: #ffffff; /* Белый цвет заголовка */
@@ -88,6 +93,10 @@ ul li a {
     text-decoration: none; /* Убираем подчеркивание */
 }
 
+a {
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: hover; 
+}
 /* Подвал */
 footer {
     text-align: center; /* Центрирование текста в подвале */
