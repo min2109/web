@@ -6,83 +6,72 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #1e1e1e; /* Темный фон */
-    color: #d9d9d9; /* Светлый текст */
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0d1117; /* Темный фон */
+    color: #c9d1d9; /* Светлый текст */
     line-height: 1.6;
 }
 
 /* Заголовок */
 header {
-    display: flex; /* Используем Flexbox */
-    justify-content: space-between; /* Размещаем элементы по краям */
-    align-items: center; /* Выравнивание по вертикали */
-    padding: 20px; /* Отступы */
-    background-color: #2a2a2a; /* Фоновый цвет шапки */
-}
-
-.logo {
-    height: 60px; /* Высота логотипа */
-    margin-right: 20px; /* Отступ справа для навигации */
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Центрируем по вертикали */
+    padding: 20px 40px; /* Отступы сверху и снизу, слева и справа */
 }
 
 h1 {
     font-size: 2.5em; /* Размер заголовка */
     color: #ffffff; /* Белый цвет заголовка */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Тень для текста заголовка */
+    margin: 0; /* Убираем отступы */
+    text-align: left; /* Выровнять текст влево */
 }
 
-/* Навигация */
 nav {
-    margin-top: 0; /* Убираем отступ сверху, если он есть */
+    margin-left: auto; /* Отодвигаем навигацию вправо */
 }
 
 nav ul {
     list-style: none;
+    display: flex; /* Используем flexbox для горизонтального расположения */
 }
 
 nav ul li {
-    display: inline; /* Горизонтальное расположение */
-    margin: 0 15px;
+    margin: 0 20px; /* Отступы между элементами навигации */
 }
 
 nav a {
-    text-decoration: none;
-    color: #d9d9d9; /* Светлый цвет текста */
-    font-weight: 500;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #ffffff; /* Белый цвет ссылок */
+    font-weight: 600;
     transition: color 0.3s; /* Плавный переход */
 }
 
 nav a:hover {
-    color: #ffffff; /* Белый цвет при наведении */
+    color: #58a6ff; /* Цвет при наведении */
 }
 
 /* Основной контент */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto; /* Центрирование */
-    padding: 20px;
-    background: linear-gradient(135deg, #2a2a2a, #3a3a3a); /* Градиентный фон */
-    border-radius: 10px; /* Скругленные углы */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Тень */
+    padding: 30px;   
 }
 
+/* Секции */
 section {
-    margin-bottom: 40px; /* Отступы между секциями */
+    margin-bottom: 60px; /* Отступы между секциями */
 }
 
 h2 {
-    font-size: 1.8em; /* Размер заголовка секций */
+    font-size: 2.2em; /* Размер заголовка секций */
     color: #ffffff; /* Цвет заголовка секций */
-    margin-bottom: 20px; /* Отступ снизу */
-    border-bottom: 2px solid #333; /* Линия под заголовком */
+    /* border-bottom: 2px solid #30363d; Убрали линию под заголовком */
     padding-bottom: 10px; /* Отступ снизу */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для заголовка секции */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
 p {
-    margin: 10px 0; /* Отступы для текста */
-    line-height: 1.8; /* Увеличенный интервал между строками для легкости чтения */
+    margin: 15px 0; /* Отступы для текста */
 }
 
 /* Стили для списков проектов */
@@ -91,26 +80,20 @@ ul {
 }
 
 ul li {
-    margin: 8px 0; /* Отступ между элементами списка */
+    margin: 10px 0; /* Отступ между элементами списка */
 }
 
 ul li a {
-    color: #008cba; /* Цвет ссылок */
-    text-decoration: none;
-    transition: color 0.3s; /* Плавный переход */
-}
-
-ul li a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
-    color: #00a1ff; /* Изменение цвета при наведении */
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
 }
 
 /* Подвал */
 footer {
     text-align: center; /* Центрирование текста в подвале */
-    padding: 20px 0;
-    margin-top: 40px; /* Отступ сверху */
-    background: #1e1e1e; /* Цвет подвала */
-    color: #d9d9d9; /* Цвет текста */
-    border-top: 1px solid #333; /* Линия сверху */
+    padding: 30px 0;
+    margin-top: 60px; /* Отступ сверху */
+    background: #0d1117; /* Цвет подвала */
+    color: #c9d1d9; /* Цвет текста */
+    border-top: 1px solid #30363d; /* Линия сверху */
 }
